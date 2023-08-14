@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Introduction to Responsive Web Apps - Task 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Responsive Web Design Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SIT120 - Introduction to Responsive Web Apps - Task 2</h1>
+        <p>Exploring Responsive Web Design and JavaScript Concepts</p>
+    </header>
+    <div class="container">
+        <h2>Responsive Web Design Concepts</h2>
+        <p>Responsive web design ensures a website's adaptability across various devices and screen sizes. This approach
+            involves using fluid grids, flexible images, and CSS media queries to create layouts that respond to the
+            user's device. It's important because it enhances user experience, boosts SEO rankings, and reduces
+            development efforts by maintaining a single codebase. With the increasing variety of devices used to access
+            the internet, responsive design is essential for providing a consistent and user-friendly browsing
+            experience.</p>
+
+        <h2>JavaScript Concepts Implementation</h2>
+        <p>Check Console for Implemented methods</p>
+
+        <!-- String methods -->
+        <h3>String methods:</h3>
+        <p>Original String: Hello, World!</p>
+        <p>Length: 13</p>
+        <p>Uppercase: HELLO, WORLD!</p>
+        <p>Substring: Hello</p>
+        <p>Character at index 7: W</p>
+        <p>Index of 'World': 7</p>
+
+        <!-- Number methods -->
+        <h3>Number methods:</h3>
+        <p>Original Number: 42.75</p>
+        <p>Fixed to 2 decimals: 42.75</p>
+        <p>Exponential notation: 4.275e+1</p>
+        <p>Rounded up: 43</p>
+        <p>Square root: 6.542780791561682</p>
+
+        <!-- Array methods -->
+        <h3>Array methods:</h3>
+        <p>Original Array: 1,2,3,four,five</p>
+        <p>Length: 5</p>
+        <p>Join as string: 1, 2, 3, four, five</p>
+        <p>Index of 'four': 3</p>
+        <p>Removed last element: five</p>
+        <p>Added element: 6</p>
+
+        <!-- Date methods -->
+        <h3>Date methods:</h3>
+        <p>Current Date: Sat Aug 19 2023 12:34:56 GMT+0000 (Coordinated Universal Time)</p>
+        <p>Year: 2023</p>
+        <p>Month: 8</p>
+        <p>Day of the week: 6</p>
+        <p>Hours: 12</p>
+
+        <!-- Function methods -->
+        <h3>Function methods:</h3>
+        <p>Function Result: Hello, Alice!</p>
+        <p>Function Result: 12</p>
+
+        <script>
+            // JavaScript concepts implementation
+            // Array methods
+            const arr = [1, 2, 3, "four", "five"];
+            console.log("Original Array: " + arr);
+            console.log("Length: " + arr.length);
+            console.log("Join as string: " + arr.join(", "));
+            console.log("Index of 'four': " + arr.indexOf("four"));
+            console.log("Removed last element: " + arr.pop());
+            console.log("Added element: " + arr.push("six"));
+
+            // Date methods
+            const currentDate = new Date();
+            console.log("Current Date: " + currentDate);
+            console.log("Year: " + currentDate.getFullYear());
+            console.log("Month: " + (currentDate.getMonth() + 1));
+            console.log("Day of the week: " + currentDate.getDay());
+            console.log("Hours: " + currentDate.getHours());
+
+            // Function methods
+            function greet(name) {
+                return "Hello, " + name + "!";
+            }
+
+            console.log("Function Result: " + greet("Alice"));
+
+            const addNumbers = function (a, b) {
+                return a + b;
+            };
+
+            console.log("Function Result: " + addNumbers(5, 7));
+        </script>
+    </div>
+</body>
+
+</html>
