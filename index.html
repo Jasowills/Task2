@@ -54,46 +54,60 @@
         <p>Check Console for Implemented methods</p>
 
         <!-- String methods -->
-        <h3>String methods:</h3>
-        <p>Original String: Hello, World!</p>
-        <p>Length: 13</p>
-        <p>Uppercase: HELLO, WORLD!</p>
-        <p>Substring: Hello</p>
-        <p>Character at index 7: W</p>
-        <p>Index of 'World': 7</p>
+        <h3>String methods: const originalString = "Hello, World!";</h3>
+        <p> console.log("Original String: " + originalString); Result: Original String: Hello, World!</p>
+        <p> console.log("Length: " + originalString.length); Result: Length: 13</p>
+        <p> console.log("Uppercase: " + originalString.toUpperCase()) Result:Uppercase: HELLO, WORLD!</p>
+        <p>  console.log("Substring: " + originalString.substring(0, 5)); Result: Substring: Hello</p>
+        <p>console.log("Character at index 7: " + originalString.charAt(7)); Result: Character at index 7: W</p>
+        <p>console.log("Index of 'World': " + originalString.indexOf("World")); Result: Index of 'World': 7</p>
 
         <!-- Number methods -->
-        <h3>Number methods:</h3>
-        <p>Original Number: 42.75</p>
-        <p>Fixed to 2 decimals: 42.75</p>
-        <p>Exponential notation: 4.275e+1</p>
-        <p>Rounded up: 43</p>
-        <p>Square root: 6.542780791561682</p>
+        <h3>Number methods:  console.log("Original Number: " + originalNumber);</h3>
+        <p>console.log("Original String: " + originalString); Result: Original Number: 42.75</p>
+        <p>console.log("Fixed to 2 decimals: " + originalNumber.toFixed(2)); Result: Fixed to 2 decimals: 42.75</p>
+        <p>console.log("Exponential notation: " + originalNumber.toExponential()); Result: Exponential notation: 4.275e+1</p>
+        <p>console.log("Rounded up: " + Math.ceil(originalNumber)); Result: Rounded up: 43</p>
+        <p>console.log("Square root: " + Math.sqrt(originalNumber)); Result: Square root: 6.542780791561682</p>
 
         <!-- Array methods -->
-        <h3>Array methods:</h3>
-        <p>Original Array: 1,2,3,four,five</p>
-        <p>Length: 5</p>
-        <p>Join as string: 1, 2, 3, four, five</p>
-        <p>Index of 'four': 3</p>
-        <p>Removed last element: five</p>
-        <p>Added element: 6</p>
+        <h3>Array methods:  const arr = [1, 2, 3, "four", "five"];</h3>
+        <p>console.log("Original Array: " + arr); Result: Original Array: 1,2,3,four,five</p>
+        <p>console.log("Length: " + arr.length); Result: Length: 5</p>
+        <p>console.log("Join as string: " + arr.join(", ")); Result: Join as string: 1, 2, 3, four, five</p>
+        <p>console.log("Index of 'four': " + arr.indexOf("four")); Result: Index of 'four': 3</p>
+        <p>console.log("Removed last element: " + arr.pop());: Removed last element: five</p>
+        <p>console.log("Added element: " + arr.push("six")); Result: Added  element: 6</p>
 
         <!-- Date methods -->
         <h3>Date methods:</h3>
-        <p>Current Date: Sat Aug 19 2023 12:34:56 GMT+0000 (Coordinated Universal Time)</p>
-        <p>Year: 2023</p>
-        <p>Month: 8</p>
-        <p>Day of the week: 6</p>
-        <p>Hours: 12</p>
+        <p>console.log("Current Date: " + currentDate); Result:Current Date: Sat Aug 19 2023 12:34:56 GMT+0000 (Coordinated Universal Time)</p>
+        <p>console.log("Year: " + currentDate.getFullYear()); Result:Year: 2023</p>
+        <p>console.log("Month: " + (currentDate.getMonth() + 1)); Result:Month: 8</p>
+        <p>console.log("Day of the week: " + currentDate.getDay()); Result:Day of the week: 6</p>
+        <p>console.log("Hours: " + currentDate.getHours()); Result:Hours: 12</p>
 
         <!-- Function methods -->
         <h3>Function methods:</h3>
-        <p>Function Result: Hello, Alice!</p>
-        <p>Function Result: 12</p>
+        <p>console.log("Function Result: " + greet("Alice")); Result :Function Result: Hello, Alice!</p>
+        <p> console.log("Function Result: " + addNumbers(5, 7)); Result:Function Result: 12</p>
 
         <script>
             // JavaScript concepts implementation
+            const originalString = "Hello, World!";
+            console.log("Original String: " + originalString);
+            console.log("Length: " + originalString.length);
+            console.log("Uppercase: " + originalString.toUpperCase());
+            console.log("Substring: " + originalString.substring(0, 5));
+            console.log("Character at index 7: " + originalString.charAt(7));
+            console.log("Index of 'World': " + originalString.indexOf("World"));
+            //Number Methods
+            const originalNumber = 42.75;
+            console.log("Original Number: " + originalNumber);
+            console.log("Fixed to 2 decimals: " + originalNumber.toFixed(2));
+            console.log("Exponential notation: " + originalNumber.toExponential());
+            console.log("Rounded up: " + Math.ceil(originalNumber));
+            console.log("Square root: " + Math.sqrt(originalNumber));
             // Array methods
             const arr = [1, 2, 3, "four", "five"];
             console.log("Original Array: " + arr);
